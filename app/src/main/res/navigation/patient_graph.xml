@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/patient_graph"
+    app:startDestination="@id/patient_profile">
+
+    <fragment
+        android:id="@+id/patient_profile"
+        android:name="patient.PatientProfile"
+        android:label="PatientProfile" >
+        <action
+            android:id="@+id/action_patientProfile_to_patientSessionsFragment"
+            app:destination="@id/patientSessionsFragment" />
+        <action
+            android:id="@+id/action_patientProfile_to_doctorAppointmentsFragment"
+            app:destination="@id/patient_appointments" />
+        <action
+            android:id="@+id/action_patient_profile_to_lineChartFragment2"
+            app:destination="@id/lineChartFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/patient_appointments"
+        android:name="com.example.clinic.AppointmentsFragment"
+        android:label="DoctorAppointmentsFragment" >
+        <action
+            android:id="@+id/action_doctorAppointmentsFragment_to_appointmentInfo2"
+            app:destination="@id/appointmentInfo2" />
+        <action
+            android:id="@+id/action_patient_appointments_to_patientDoctorListFragment2"
+            app:destination="@id/patientDoctorListFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentInfo2"
+        android:name="com.example.clinic.AppointmentInfo"
+        android:label="AppointmentInfo" />
+    <fragment
+        android:id="@+id/patient_settings"
+        android:name="settings.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/patientSessionsFragment"
+        android:name="patient.PatientSessionsFragment"
+        android:label="PatientSessionsFragment" >
+        <action
+            android:id="@+id/action_patientSessionsFragment_to_patientAttachmentsFragment2"
+            app:destination="@id/patientAttachmentsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/patientAttachmentsFragment2"
+        android:name="com.example.clinic.PatientAttachmentsFragment"
+        android:label="PatientAttachmentsFragment" >
+        <action
+            android:id="@+id/action_patientAttachmentsFragment2_to_pdfViewFragment2"
+            app:destination="@id/pdfViewFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/makeAppointmentFragment"
+        android:name="com.example.clinic.MakeAppointmentFragment"
+        android:label="MakeAppointmentFragment" />
+    <fragment
+        android:id="@+id/patientDoctorListFragment2"
+        android:name="com.example.clinic.PatientDoctorListFragment"
+        android:label="PatientDoctorListFragment" >
+        <action
+            android:id="@+id/action_patientDoctorListFragment2_to_doctorDayAppointmentFragment"
+            app:destination="@id/doctorDayAppointmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorDayAppointmentFragment"
+        android:name="patient.DoctorDayAppointmentFragment"
+        android:label="DoctorDayAppointmentFragment" />
+    <fragment
+        android:id="@+id/pdfViewFragment2"
+        android:name="com.example.clinic.PdfViewFragment"
+        android:label="pdf_viewer"
+        tools:layout="@layout/pdf_viewer" />
+    <fragment
+        android:id="@+id/QRCodeFragment"
+        android:name="patient.QRCodeFragment"
+        android:label="QRCodeFragment" />
+    <fragment
+        android:id="@+id/lineChartFragment2"
+        android:name="com.example.clinic.LineChartFragment"
+        android:label="LineChartFragment" />
+</navigation>

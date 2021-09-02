@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/statisticKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppins"
+        android:text="Patients"
+        android:textColor="@color/main"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/statisticValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="end"
+        android:paddingRight="10dp"
+        android:text="48"
+        android:textSize="14sp" />
+</LinearLayout>

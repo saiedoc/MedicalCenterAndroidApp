@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/patient_profile"
+            android:icon="@drawable/profile"
+            android:title="@string/profile" />
+
+        <item
+            android:id="@+id/patient_appointments"
+            android:icon="@drawable/appointments"
+            android:title="@string/appointments" />
+
+        <item
+            android:id="@+id/QRCodeFragment"
+            android:icon="@drawable/qr_code"
+            android:title="@string/qrcode" />
+
+    </group>
+
+    <item android:title="@string/general">
+
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/patient_settings"
+                    android:icon="@drawable/settings"
+                    android:title="@string/settings" />
+
+
+            </group>
+        </menu>
+    </item>
+</menu>

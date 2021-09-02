@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/doctor_profile">
+
+    <fragment
+        android:id="@+id/doctor_profile"
+        android:name="doctor.DoctorProfile"
+        android:label="DoctorProfile" />
+    <fragment
+        android:id="@+id/patient"
+        android:name="patient.PatientProfile"
+        android:label="PatientProfile" >
+        <action
+            android:id="@+id/action_patient_to_patients"
+            app:destination="@id/doctor_patients"
+            app:enterAnim="@anim/exit_to_right" />
+        <action
+            android:id="@+id/action_patient_to_patientSessionsFragment"
+            app:destination="@id/patientSessionsFragment2"
+            app:enterAnim="@anim/open_to_right" />
+        <action
+            android:id="@+id/action_patient_to_lineChartFragment"
+            app:destination="@id/lineChartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctor_patients"
+        android:name="doctor.PatientListFragment"
+        android:label="Patients" >
+        <action
+            android:id="@+id/action_patients_to_patientProfile"
+            app:destination="@id/patient"
+            app:enterAnim="@anim/open_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctor_settings"
+        android:name="settings.SettingsFragment"
+        android:label="Settings" />
+
+    <fragment
+        android:id="@+id/doctor_appointments"
+        android:name="com.example.clinic.AppointmentsFragment"
+        android:label="DoctorAppointmentsFragment" >
+        <action
+            android:id="@+id/action_appointments_to_appointmentInfo"
+            app:destination="@id/appointmentInfo"
+            app:enterAnim="@anim/open_to_right" />
+        <action
+            android:id="@+id/action_doctor_appointments_to_doctorDayAppointmentsListFragment"
+            app:destination="@id/doctorDayAppointmentsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentInfo"
+        android:name="com.example.clinic.AppointmentInfo"
+        android:label="AppointmentInfo" >
+        <action
+            android:id="@+id/action_appointmentInfo_to_patientAttachmentsFragment"
+            app:destination="@id/patientAttachmentsFragment"
+            app:enterAnim="@anim/open_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/patientAttachmentsFragment"
+        android:name="com.example.clinic.PatientAttachmentsFragment"
+        android:label="PatientAttachmentsFragment" >
+        <action
+            android:id="@+id/action_patientAttachmentsFragment_to_pdfViewFragment"
+            app:destination="@id/pdfViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/patientSessionsFragment2"
+        android:name="patient.PatientSessionsFragment"
+        android:label="PatientSessionsFragment" >
+        <action
+            android:id="@+id/action_patientSessionsFragment2_to_patientAttachmentsFragment"
+            app:destination="@id/patientAttachmentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorListFragment"
+        android:name="admin.DoctorListFragment"
+        android:label="DoctorListFragment" />
+    <fragment
+        android:id="@+id/pdfViewFragment"
+        android:name="com.example.clinic.PdfViewFragment"
+        android:label="pdf_viewer"
+        tools:layout="@layout/pdf_viewer" />
+    <fragment
+        android:id="@+id/doctor_pending_appointments"
+        android:name="doctor.PendingAppointmentsFragment"
+        android:label="PendingAppointmentsFragment" >
+        <action
+            android:id="@+id/action_pendingAppointmentsFragment_to_appointmentInfo"
+            app:destination="@id/appointmentInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorDayAppointmentsListFragment"
+        android:name="doctor.DoctorDayAppointmentsListFragment"
+        android:label="DoctorDayAppointmentsListFragment" >
+        <action
+            android:id="@+id/action_doctorDayAppointmentsListFragment_to_appointmentInfo"
+            app:destination="@id/appointmentInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/capture"
+        android:name="com.example.clinic.Capture"
+        android:label="Capture" />
+    <fragment
+        android:id="@+id/lineChartFragment"
+        android:name="com.example.clinic.LineChartFragment"
+        android:label="LineChartFragment" />
+
+</navigation>

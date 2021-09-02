@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Clinic</string>
+    <string name="doctor_name">Doctor Name</string>
+    <string name="specialization">Specialization</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="appointments">Appointments</string>
+    <string name="logout">Log Out</string>
+    <string name="username_default_text">Username</string>
+    <string name="password_default_text">Password</string>
+    <string name="patients">Patients</string>
+    <string name="general">General</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="dr">Dr. </string>
+    <string name="login_button_text">Login</string>
+    <string name="edit"><u>Edit</u></string>
+    <string name="bold_gender"><b>Gender</b></string>
+    <string name="bold_email"><b>E-Mail</b></string>
+    <string name="bold_age"><b>Age</b></string>
+    <string name="bold_patients"><b>Patients</b></string>
+    <string name="bold_appointments"><b>Appointments</b></string>
+    <string name="bold_specialization"><b>Specialization</b></string>
+    <string name="bold_phone_number"><b>Phone Number</b></string>
+    <string name="bold_sickness"><b>Sickness</b></string>
+    <string name="call">Call</string>
+    <string name="name">Name</string>
+    <string name="sickness">Sickness</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="doctors">Doctors</string>
+    <string name="new_patient"><u>New Patient</u></string>
+    <string name="new_doctor"><u>New Doctor</u></string>
+    <string name="info">Info</string>
+    <string name="qrcode">QR Code</string>
+    <string name="vdata">View Data</string>
+    <string name="glucose">Glucose Data</string>
+    <string name="blood">Blood Pressure Data</string>
+    <string name="oxygenation">Oxygenation</string>
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="sicknesses">
+        <item>Headache</item>
+        <item>Stomachache</item>
+        <item>Muscular Issue</item>
+        <item>Broken Bone(s)</item>
+        <item>Respiratory Issue</item>
+        <item>Cardiovascular Issue</item>
+        <item>Nutrition Issue</item>
+        <item>Dental Issue</item>
+        <item>Auditory Issue</item>
+        <item>Eye Issue</item>
+        <item>Digestive Issue</item>
+    </string-array>
+    <string-array name="specializations">
+        <item>Dentist</item>
+        <item>Surgeon</item>
+        <item>Nutrition</item>
+    </string-array>
+    <string name="session_report">Session Report</string>
+    <string name="attachments">Attachments</string>
+    <string name="view_sessions">View Sessions</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="accepted">Accepted</string>
+    <string name="rejected">Rejected</string>
+    <string name="disabled">Disabled.</string>
+    <string name="enabled">Enabled.</string>
+    <string name="admin">Admin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

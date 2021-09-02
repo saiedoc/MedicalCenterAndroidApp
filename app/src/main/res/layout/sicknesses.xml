@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/patientSickness1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/poppins"
+        android:text="NULL"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/patientSickness2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/poppins"
+        android:text="NULL"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/patientSickness3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/poppins"
+        android:text="NULL"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/patientSickness4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/poppins"
+        android:text="NULL"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/patientSickness5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/poppins"
+        android:text="NULL"
+        android:textSize="20sp"
+        android:layout_marginRight="7dp" />
+
+    <Button
+        android:id="@+id/okSicknessBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/main"
+        android:text="OK" />
+</LinearLayout>

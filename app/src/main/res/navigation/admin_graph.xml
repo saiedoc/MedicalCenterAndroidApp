@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_graph"
+    app:startDestination="@id/statistics">
+
+    <fragment
+        android:id="@+id/doctorProfile"
+        android:name="doctor.DoctorProfile"
+        android:label="DoctorProfile" >
+        <action
+            android:id="@+id/action_doctorProfile_to_doctorAppointmentsFragment2"
+            app:destination="@id/doctorAppointmentsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/admin_settings"
+        android:name="settings.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/doctorAppointmentsFragment2"
+        android:name="com.example.clinic.AppointmentsFragment"
+        android:label="DoctorAppointmentsFragment" >
+        <action
+            android:id="@+id/action_doctorAppointmentsFragment2_to_appointmentInfo3"
+            app:destination="@id/appointmentInfo3" />
+    </fragment>
+    <fragment
+        android:id="@+id/admin_doctors"
+        android:name="admin.DoctorListFragment"
+        android:label="DoctorListFragment" >
+        <action
+            android:id="@+id/action_doctorListFragment_to_doctorProfile"
+            app:destination="@id/doctorProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentInfo3"
+        android:name="com.example.clinic.AppointmentInfo"
+        android:label="AppointmentInfo" />
+    <fragment
+        android:id="@+id/statistics"
+        android:name="admin.StatisticsFragment"
+        android:label="StatisticsFragment" />
+</navigation>
