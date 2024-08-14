@@ -70,7 +70,7 @@ The app is built using **Gradle**, and the key dependencies include:
 
 Given that this project has not been maintained for the past three years, the libraries and configurations may be outdated and could result in build issues. Please **contact me** if you encounter any problems, and I will assist you with updating the dependencies and configurations to get the project up and running.
 
-## Author
+## Authors
 
 - **Saied Aussi**
 - **Eyad Al Sayed**
