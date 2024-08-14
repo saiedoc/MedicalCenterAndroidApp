@@ -14,7 +14,7 @@ This is an Android application designed to assist doctors and patients in managi
 
 ## Project Status
 
-⚠️ **Note:** This project has not been maintained for the past three years. Dependencies, configurations, and libraries may be outdated. If you are interested in using or contributing to the project, please contact me to update the necessary dependencies and configurations to get the app running again.
+⚠️ **Note:** This project has not been maintained since 2021. Dependencies, configurations, and libraries may be outdated. If you are interested in using or contributing to the project, please contact me to update the necessary dependencies and configurations to get the app running again.
 
 ## Prerequisites
 
